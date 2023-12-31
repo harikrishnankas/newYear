@@ -1,0 +1,20 @@
+body{
+  margin: 0;
+}
+.imgcontainer {
+  position: relative;
+  width: 100%;
+
+}
+.image-container {
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-image: url('images/ezgif-frame-001.jpg');
+  object-fit: cover;
+  height: 50%; 
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Sigmar+One");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+.happy{
+    font-family: 'Sigmar One';
+    font-size: 2em;
+}
+.newyear{
+    font-family: 'Indie Flower';
+    font-size: 1.5em;
+}
+.akka{
+    font-family: 'Sigmar One';
+}
+section {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .last{
+    margin: 0;
+
+  }
+  
+  section .text-container .text-box {
+
+    margin: 20px;
+    padding: 50px;
+    color: #D8E3E7;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  
+  @media (max-width: 900px) {
+    section .text-container {
+      flex-direction: column;
+    }
+  }
+  
+  .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 2s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+  p.lastmsg {
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  p span.ready {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span.ready:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span.ready:nth-child(3) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span.ready:nth-child(5) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
