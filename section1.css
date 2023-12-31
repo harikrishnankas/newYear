@@ -24,7 +24,7 @@ div#minion {
 img.yourPhoto {
         display:block;
         position:absolute;
-        top:15vh;
+        top:10vh;
         left:15%;
         width:75%;
 }
