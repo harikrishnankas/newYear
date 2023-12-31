@@ -6,7 +6,7 @@ for (let i = 1; i< imgLen;i++){
   }else if (i<100){
     fruit[i] = "images/ezgif-frame-0"+i+".jpg";
   }else{
-    fruit[i] = "images/ezgif-frame-"+i+".jpg";
+    fruit[i] = "images-1/ezgif-frame-"+i+".jpg";
   }
 }
 
